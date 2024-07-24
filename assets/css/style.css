@@ -251,7 +251,7 @@ body { background: var(--white); }
 
 .helpline-box .icon-box ion-icon { --ionicon-stroke-width: 40px; }
 
-.header-top .logo { margin-inline: auto; }
+.header-top .logo { margin-inline: center; }
 
 .header-top .logo img { max-width: 100px; }
 
@@ -633,8 +633,31 @@ body { background: var(--white); }
 .package .btn { margin-inline: auto; }
 
 
+/*-----------------------------------*\
+ * #Youtube
+\*----*/
+section.youtube {
+    display: flex;
+    justify-content: center;  /* Horizontal center */
+    align-items: center;      /* Vertical center */
+    min-height: 5vh;        /* Atur tinggi minimum agar section mengambil seluruh tinggi viewport */
+    margin: 20px 0;           /* Atur margin atas dan bawah sesuai kebutuhan */
+}
 
+section.youtube .container {
+    text-align: center;       /* Pusatkan teks di dalam container */
+}
 
+.youtube-container {
+    max-width: 800px;         /* Atur lebar maksimum iframe */
+    width: 100%;              /* Atur lebar penuh container */
+    margin: 20px auto;        /* Atur margin atas dan bawah container */
+}
+
+iframe {
+    width: 100%;              /* Atur iframe agar sesuai dengan lebar container */
+    height: 300px;            /* Atur tinggi iframe sesuai kebutuhan */
+}
 
 /*-----------------------------------*\
  * #GALLERY
@@ -1225,6 +1248,8 @@ address {
    */
 
   .popular-list { grid-template-columns: repeat(3, 1fr); }
+
+
 
 
 
